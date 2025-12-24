@@ -1,0 +1,6 @@
+def generate_custom_list(n):
+    return [1 if index % 2 == 0 else index % 5 for index in range(n)]
+
+list_length = int(input("Введите длину списка: "))
+custom_list = generate_custom_list(list_length)
+print("Результат:", custom_list)

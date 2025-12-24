@@ -1,0 +1,8 @@
+def extract_vowels(text):
+    vowels = "аеёиоуыэюяАЕЁИОУЫЭЮЯ"
+    return [char for char in text if char in vowels]
+
+user_text = input("Введите текст: ")
+vowel_list = extract_vowels(user_text)
+print("Список гласных букв:", vowel_list)
+print("Длина списка:", len(vowel_list))

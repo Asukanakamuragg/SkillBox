@@ -1,0 +1,4 @@
+alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+text = input("Введите сообщение: ")
+shift = int(input("Введите сдвиг: "))
+print("".join([alphabet[(alphabet.index(c)+shift)%len(alphabet)] if c in alphabet else c for c in text]))

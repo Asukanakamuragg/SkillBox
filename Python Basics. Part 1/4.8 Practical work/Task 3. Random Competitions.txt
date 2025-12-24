@@ -1,0 +1,13 @@
+def generate_team_scores(size):
+    return [round(random.uniform(5, 10), 2) for _ in range(size)]
+
+def determine_winners(team1, team2):
+    return [max(score1, score2) for score1, score2 in zip(team1, team2)]
+
+team1_scores = generate_team_scores(20)
+team2_scores = generate_team_scores(20)
+winners = determine_winners(team1_scores, team2_scores)
+
+print("Первая команда:", team1_scores)
+print("Вторая команда:", team2_scores)
+print("Победители тура:", winners)

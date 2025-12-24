@@ -1,0 +1,8 @@
+def reverse_between_h(text):
+    first_h = text.index('h')
+    last_h = text.rindex('h')
+    return text[first_h+1:last_h][::-1]
+
+input_text = input("Введите строку: ")
+reversed_part = reverse_between_h(input_text)
+print("Развtрнутая последовательность между первым и последним h:", reversed_part)
